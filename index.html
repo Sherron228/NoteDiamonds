@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamonds - Освещай свои идеи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Diamonds <img src="алмаз.png" alt="Алмаз" class="diamond-icon"></h1>
+            <div class="button-container">
+                <button id="addNoteButton">Добавить заметку</button>
+                <button id="saveNotesButton">Сохранить заметки</button>
+                <label for="fileInput" class="file-label">Выберите файл</label>
+                <input type="file" id="fileInput" accept=".txt" style="display: none;">
+                <button id="loadNoteButton">Загрузить заметку</button>
+                <button id="deleteNoteButton">Удалить заметку</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="tabs"></div>
+            <div id="noteArea">
+                <textarea id="noteInput" placeholder="Введите заметку..."></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
